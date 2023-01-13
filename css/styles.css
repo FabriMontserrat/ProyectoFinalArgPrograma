@@ -1,0 +1,98 @@
+* {
+    margin: auto;
+}
+
+/* css header */
+header {
+    background-color: #54787d;
+}
+
+header ul {
+    display: flex;
+    padding: 15px 0px;
+    font-size: large;
+    list-style-type: none;
+}
+
+header a:visited {
+    color: white;
+}
+
+/* Fin css header */
+
+/* Inicio Body*/
+
+main {
+    background-color: #e3e5d7;
+}
+
+main p{
+    font-size: 20px
+}
+
+#AcercaDeMi {
+    display: flex;
+}
+
+.foto img{
+height: 280px;
+padding: 25px 25px;
+border-radius: 50%;
+}
+
+.titulo{
+    display: flex;
+    font-size: larger;
+}
+
+.datos{
+    padding-top: 5px;
+    font-size: 22px;
+}
+
+.datos ul{
+    list-style-type: none;
+}
+
+.datos li{
+    padding-bottom: 3px;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+    padding: 2%;
+}
+
+.empresas ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.tema{
+    padding: 2%;
+}
+
+.empresas ul li{
+    font-size: 22px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+/*Fin Body*/
+
+/*Inicio Footer*/
+
+footer {
+    background-color: #54787d;
+    padding: 2%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Fin Footer*/
