@@ -108,6 +108,10 @@ border-radius: 50%;
     padding-bottom: 5px;
 }
 
+.centrado p{
+    text-align: center;
+}
+
 main > section, header > nav, footer > div{
     max-width: 1200px;
 }
@@ -194,4 +198,11 @@ footer {
         flex-direction: column;
     }
     
+    header nav ul li {
+        font-size:14px ;
+    }
+
+    main {
+        margin-top: 45px;
+    }
 }
