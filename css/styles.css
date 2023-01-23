@@ -5,6 +5,11 @@
 /* css header */
 header {
     background-color: #54787d;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 header ul {
@@ -14,7 +19,7 @@ header ul {
     list-style-type: none;
 }
 
-header a:visited {
+header a {
     color: white;
 }
 
@@ -23,6 +28,7 @@ header a:visited {
 /* Inicio Body*/
 
 main {
+    margin-top: 51px;
     background-color: #e3e5d7;
 }
 
@@ -81,13 +87,94 @@ border-radius: 50%;
     font-weight: bold;
 }
 
+.botoncontacto{
+    display: flex;
+    padding: 5px 0px 5px 0px;
+}
+
+.btn {
+    padding: 10px 30px 15px 30px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    text-decoration: none;
+    background: #54787d; 
+    color: white;
+}
+
+.formularioContacto{
+    padding-bottom: 5px;
+}
+
+main > section, header > nav, footer > div{
+    max-width: 1200px;
+}
+
 /*Fin Body*/
+
+/*Formulario*/
+
+*{box-sizing:border-box;}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/*Fin Formulario*/
 
 /*Inicio Footer*/
 
 footer {
     background-color: #54787d;
-    padding: 2%;
+    padding: 10px;
 }
 
 .redes{
@@ -96,3 +183,12 @@ footer {
 }
 
 /*Fin Footer*/
+
+
+@media (max-width:660px){
+
+    #AcercaDeMi{
+        flex-direction: column;
+    }
+    
+}

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/descarga.ico">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="img/descarga.ico">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Curriculum proyecto final Argentina Programa</title>
 </head>
 
@@ -19,7 +19,6 @@
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Estudios">Estudios</a></li>
                 <li><a href="#Experiencia">Experiencia</a></li>
-                <li><a href="">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +26,7 @@
     <main>
         <section id="AcercaDeMi">
             <div class="foto">
-                <img src="/img/57.jpg" alt="Foto Jessica">
+                <img src="img/57.jpg" alt="Foto Jessica">
             </div>
             <div>
                 <div class="datos">
@@ -126,17 +125,39 @@
             </div>
         </section>
 
-        <footer>
-            <div class="redes">
-                <a href="https://www.facebook.com/"><img src="img/icon-facebook.svg" alt="" /></a>
-                <a href="https://www.youtube.com/"><img src="img/icon-youtube.svg" alt="" /></a>
-                <a href="https://twitter.com/"><img src="img/icon-twitter.svg" alt="" /></a>
-                <a href="https://www.instagram.com/"><img src="img/icon-instagram.svg" alt="" /></a>
-                <a class="btn" href="contact.html">Contacto</a>
+        <div class="botoncontacto">
+            <button type="button" class="btn" id="contacto">Contacto</button>
+        </div>
 
-            </div>
-        </footer>
+        <section class="formularioContacto" id="formularioContacto" style="display: none;">
+            <form action="#" target="" method="get" onsubmit="enviarform()" name="formDatosPersonales">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required />
+                
+                <label for="asunto">Asunto</label>
+                <input type ="text" name="asunto" id="asunto" placeholder="Asunto de la consulta"/>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 500 carácteres" maxlength="500"></textarea>
+                
+                <input type="submit" name="enviar" value="enviar mensaje" id="enviarMensaje"/>
+            </form>
+        </section>
     </main>
+        
+    <footer>
+        <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/"><img src="img/icon-facebook.svg" alt="" /></a>
+            <a target="_blank" href="https://www.youtube.com/"><img src="img/icon-youtube.svg" alt="" /></a>
+            <a target="_blank" href="https://twitter.com/"><img src="img/icon-twitter.svg" alt="" /></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="img/icon-instagram.svg" alt="" /></a>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
 </body>
 
 </html>
